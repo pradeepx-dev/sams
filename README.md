@@ -1,4 +1,4 @@
-Student Attendance Management System (SAMS)
+tudent Attendance Management System (SAMS)
 Overview
 Student Attendance Management System (SAMS) is a web-based application designed to streamline and simplify the process of managing student attendance. Developed as a minor project for our college, SAMS aims to provide an intuitive, efficient, and user-friendly solution for teachers and administrators to track and analyze student attendance.
 
