@@ -49,7 +49,8 @@ foreach ($marks as $student_id => $marks_obtained) {
 $stmt->close();
 $conn->close();
 
-// Confirmation message
-echo "Marks successfully uploaded.";
+// Redirect to a success page or refresh
+header("Location: dashboard_prof.php");
+exit();
 ?>
 

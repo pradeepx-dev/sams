@@ -23,7 +23,7 @@ if ($professor_query->num_rows > 0) {
 }
 
 // Fetch students for the selected department and semester
-$students = $conn->query("SELECT student_id, first_name FROM students WHERE department_id='$department_id' AND semester_id='$semester_id'");
+$students = $conn->query("SELECT student_id, first_name, last_name FROM students WHERE department_id='$department_id' AND semester_id='$semester_id'");
 ?>
 
 <!DOCTYPE html>
@@ -130,7 +130,7 @@ $students = $conn->query("SELECT student_id, first_name FROM students WHERE depa
                 <tbody>
                     <?php while ($row = $students->fetch_assoc()) { ?>
                         <tr>
-                            <td><?= $row['first_name'] ?></td>
+                            <td><?= $row['first_name'].' '.$row['last_name'] ?></td>
                             <td>
                                 <input type="number" name="marks[<?= $row['student_id'] ?>]" min="0" required>
                             </td>
