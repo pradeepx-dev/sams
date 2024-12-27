@@ -4,7 +4,7 @@ include "connecting.php";
 
 // Start session
 session_start();
-
+//added a comment to check github
 // Fetch professor's username from session
 $username = $_SESSION['username'];
 
